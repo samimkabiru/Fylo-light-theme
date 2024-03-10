@@ -150,3 +150,33 @@ a {
     width: 30%;
   }
 }
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Block */
+.block {
+  padding: 3.5rem 2rem;
+}
+
+.block h1,
+.block h2 {
+  margin-top: 0;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
