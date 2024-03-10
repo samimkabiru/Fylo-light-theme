@@ -271,3 +271,23 @@ a {
     text-align: left;
   }
 }
+
+/* Media */
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media__image {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+}
+
+.media__heading {
+  margin: 0 0 0.2rem;
+}
+
+.media__content {
+  margin-left: 1.5rem;
+}
