@@ -57,3 +57,39 @@ p {
   width: 3rem;
   height: 3rem;
 }
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 0;
+  border-bottom: 2px solid hsl(170 45% 43%);
+  transition: border 0.3s;
+}
+
+.link-arrow a {
+  color: hsl(170 45% 43%);
+  transition: color 0.3s;
+}
+
+.link-arrow__icon {
+  margin-left: 5px;
+  transition: margin 0.3s;
+  cursor: pointer;
+}
+
+.link-arrow:hover {
+  border-bottom: 2px solid hsl(176 68% 64%);
+}
+
+.link-arrow:hover a {
+  color: hsl(176 68% 64%);
+}
+
+.link-arrow:hover .link-arrow__icon {
+  margin-left: 1rem;
+}
