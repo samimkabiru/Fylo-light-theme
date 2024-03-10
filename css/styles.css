@@ -261,6 +261,10 @@ a {
   margin-top: 2rem;
 }
 
+.hero__text {
+  color: hsl(243 87% 12%);
+}
+
 @media screen and (min-width: 1024px) {
   .hero__image {
     order: 1;
@@ -290,4 +294,25 @@ a {
 
 .media__content {
   margin-left: 1.5rem;
+}
+
+/* Testimonial */
+.testimonial {
+  box-shadow: 0 0 1rem 1rem hsl(0 0% 97%);
+  padding: 2rem 3rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.testimonial__text {
+  line-height: 1.8;
+}
+
+.testimonial__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.testimonial__media {
+  margin-top: 2rem;
 }
