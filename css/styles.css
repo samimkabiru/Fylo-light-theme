@@ -167,7 +167,7 @@ a {
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 140rem;
   margin: 0 auto;
 }
 
@@ -188,6 +188,11 @@ p {
 
 .callout__input-group .input {
   border: 0;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -212,4 +217,35 @@ p {
   .callout__input-group .btn {
     width: fit-content;
   }
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  margin: 0;
+}
+
+.nav__image {
+  width: 100%;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__item a {
+  color: hsl(243, 87%, 12%);
+}
+
+.nav__item a:hover {
+  text-decoration: underline;
+}
+
+.nav__item:nth-of-type(2) {
+  margin: 0 1rem;
 }
