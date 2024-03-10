@@ -30,11 +30,13 @@ p {
 .btn {
   text-transform: capitalize;
   border: 0;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   font-weight: 700;
   display: inline-block;
   text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .btn--block {
@@ -42,14 +44,21 @@ p {
 }
 
 .btn--primary {
-  background: hsl(224, 93%, 58%);
+  background: hsl(224 93% 58%);
   color: #fff;
-  box-shadow: 0 0 1rem hsl(0, 0%, 75%);
+  box-shadow: 0 0 1rem hsl(0 0% 75%);
+  transition: background 0.2s;
+}
+
+.btn--primary:hover,
+.btn--secondary:hover {
+  background: hsl(224 93% 68%);
 }
 
 .btn--secondary {
-  background: hsl(224, 93%, 62%);
+  background: hsl(224 93% 62%);
   color: #fff;
+  transition: background 0.2s;
 }
 
 /* Icons */
@@ -92,4 +101,37 @@ a {
 
 .link-arrow:hover .link-arrow__icon {
   margin-left: 1rem;
+}
+
+/* input */
+.input {
+  padding: 1.4rem;
+  margin-bottom: 2rem;
+  border: 0.2rem solid hsl(243 87% 12%);
+  border-radius: 0.5rem;
+  width: 0;
+}
+
+.input--block {
+  width: 100%;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    margin: 0;
+  }
+
+  .input__button {
+    width: 30%;
+    margin-left: 1.5rem;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
 }
