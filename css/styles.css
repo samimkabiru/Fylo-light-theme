@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h2 {
+  color: hsl(243 87% 12%);
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+}
