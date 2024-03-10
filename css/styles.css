@@ -110,6 +110,7 @@ a {
   border: 0.2rem solid hsl(243 87% 12%);
   border-radius: 0.5rem;
   width: 0;
+  outline: 0;
 }
 
 .input--block {
@@ -124,7 +125,7 @@ a {
   opacity: 0.5;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .input {
     margin: 0;
   }
@@ -137,17 +138,6 @@ a {
   .input-group {
     display: flex;
     align-items: center;
-  }
-}
-
-/* Callout */
-@media screen and (min-width: 768px) {
-  .callout__input-group .input {
-    margin-bottom: 2rem;
-  }
-
-  .callout__input-group .btn {
-    width: 30%;
   }
 }
 
@@ -179,4 +169,47 @@ a {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+}
+
+/* Callout */
+.callout-container {
+  background: hsl(238, 22%, 44%);
+}
+
+.callout-container h2,
+p {
+  color: #fff;
+}
+
+.callout__input-group {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.callout__input-group .input {
+  border: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .callout {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5rem;
+  }
+
+  .callout__header {
+    text-align: left;
+    width: 75ch;
+  }
+
+  .callout__input-group {
+    width: 100%;
+  }
+
+  .callout__input-group .input {
+    margin-bottom: 2rem;
+  }
+
+  .callout__input-group .btn {
+    width: fit-content;
+  }
 }
