@@ -24,3 +24,30 @@ h2 {
 p {
   margin: 0;
 }
+
+/* Buttons */
+
+.btn {
+  text-transform: capitalize;
+  border: 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--primary {
+  background: hsl(224, 93%, 58%);
+  color: #fff;
+  box-shadow: 0 0 1rem hsl(0, 0%, 75%);
+}
+
+.btn--secondary {
+  background: hsl(224, 93%, 62%);
+  color: #fff;
+}
