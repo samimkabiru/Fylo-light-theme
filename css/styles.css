@@ -116,6 +116,10 @@ a {
   width: 100%;
 }
 
+.input__button {
+  transition: width 0.2s;
+}
+
 ::placeholder {
   opacity: 0.5;
 }
@@ -133,5 +137,16 @@ a {
   .input-group {
     display: flex;
     align-items: center;
+  }
+}
+
+/* Callout */
+@media screen and (min-width: 768px) {
+  .callout__input-group .input {
+    margin-bottom: 2rem;
+  }
+
+  .callout__input-group .btn {
+    width: 30%;
   }
 }
