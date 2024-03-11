@@ -23,5 +23,155 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <section class="block">
+      <nav class="container nav">
+        <a href="/"><img class="nav__image" src="images/logo.svg" alt="" /></a>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="#">Features</a></li>
+          <li class="nav__item"><a href="#">Team</a></li>
+          <li class="nav__item"><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="block">
+      <div class="container grid grid--1x2">
+        <div class="block__header hero__header">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p class="hero__text">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form action="#" method="POST" class="input-group hero__input-group">
+            <input
+              class="input input--block"
+              type="email"
+              required
+              placeholder="Enter your email..."
+            />
+            <button
+              type="submit"
+              class="btn btn--primary btn--block input__button"
+            >
+              get started
+            </button>
+          </form>
+        </div>
+        <img class="hero__image" src="images/illustration-1.svg" alt="" />
+      </div>
+    </section>
+    <section class="block block-features">
+      <div class="container grid grid--1x2">
+        <div class="block-features__content">
+          <div class="block__header block-features__header">
+            <h2>Stay productive, wherever you are</h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+          </div>
+          <div class="link-arrow block-features__link">
+            <a href="#">See how Fylo works</a>
+            <svg class="icon icon--small link-arrow__icon">
+              <use href="images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+          <section class="testimonial block-features__testimonial">
+            <svg class="icon testimonial__icon">
+              <use href="images/sprite.svg#icon-quotes"></use>
+            </svg>
+            <p class="testimonial__text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="media testimonial__media">
+              <img
+                class="media__image"
+                src="images/avatar-testimonial.jpg"
+                alt=""
+              />
+              <div class="media__content">
+                <h3 class="media__heading">Kyle Burton</h3>
+                <p>Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <img
+          class="block-features__image"
+          src="images/illustration-2.svg"
+          alt=""
+        />
+      </div>
+    </section>
+    <div class="block callout-container">
+      <div class="container grid grid--1x2 callout">
+        <div class="block__header callout__header">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="callout__input-group">
+          <input
+            class="input input--block"
+            type="email"
+            required
+            placeholder="email@example.com"
+          />
+          <button class="btn btn--secondary btn--block">
+            get started for free
+          </button>
+        </form>
+      </div>
+    </div>
+    <section class="block block-footer">
+      <footer class="container footer">
+        <img src="images/logo-footer.svg" alt="" class="icon footer__logo" />
+        <div>
+          <div class="media footer__info">
+            <svg class="icon">
+              <use href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            <div class="media__content">
+              <p>+1-543-123-4567</p>
+            </div>
+          </div>
+          <div class="media footer__info">
+            <svg class="icon">
+              <use href="images/sprite.svg#icon-email"></use>
+            </svg>
+            <div class="media__content">
+              <p>example@fylo.com</p>
+            </div>
+          </div>
+        </div>
+        <ul class="list">
+          <li class="footer__item"><a href="#">About Us</a></li>
+          <li class="footer__item"><a href="#">Jobs</a></li>
+          <li class="footer__item"><a href="#">Press</a></li>
+          <li class="footer__item"><a href="#">Blog</a></li>
+        </ul>
+        <ul class="list">
+          <li class="footer__item"><a href="#">Contact Us</a></li>
+          <li class="footer__item"><a href="#">Terms</a></li>
+          <li class="footer__item"><a href="#">Privacy</a></li>
+        </ul>
+        <div class="footer__socials">
+          <span class="fa-brand"><i class="fa-brands fa-facebook-f"></i></span>
+          <span class="fa-brand"><i class="fa-brands fa-twitter"></i></span>
+          <span class="fa-brand"><i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </footer>
+    </section>
+  </body>
 </html>
