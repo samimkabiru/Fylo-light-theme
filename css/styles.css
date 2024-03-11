@@ -25,6 +25,16 @@ p {
   margin: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
 /* Buttons */
 
 .btn {
@@ -298,7 +308,7 @@ a {
 
 /* Testimonial */
 .testimonial {
-  box-shadow: 0 0 1rem 1rem hsl(0 0% 97%);
+  box-shadow: 0 0 0.5rem 0.6rem hsl(0 0% 96%);
   padding: 2rem 3rem;
   max-width: 40rem;
   margin: 0 auto;
@@ -315,4 +325,73 @@ a {
 
 .testimonial__media {
   margin-top: 2rem;
+}
+
+/* Features Block */
+.block-features {
+  margin-top: 5rem;
+  background: url(/images/bg-curve-mobile.svg);
+  background-size: 600% 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.block-features__image {
+  width: 100%;
+  order: -1;
+  margin-bottom: 5rem;
+}
+
+.block-features__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-features__header {
+  margin-bottom: 3rem;
+}
+
+.block-features__header p {
+  text-align: left;
+  color: hsl(240, 75%, 24%);
+  max-width: 70ch;
+}
+
+.block-features__header p:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+.block-features__link {
+  margin-bottom: 5rem;
+}
+
+.block-features__testimonial {
+  background: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-features {
+    background: url(/images/bg-curve-desktop.svg);
+    background-size: 600% 200%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+  }
+
+  .block-features__image {
+    order: 1;
+    margin: 0;
+  }
+
+  .block-features__header {
+    text-align: left;
+  }
+
+  .block-features__content {
+    align-items: flex-start;
+  }
+
+  .block-features__testimonial {
+    margin: 0;
+  }
 }
