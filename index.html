@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="All your files securely stored and accessible from anywhere."
+    />
+    <meta
+      property="og:title"
+      content="Fylo - Securely store files, accessible anywhere."
+    />
+    <meta
+      property="og:description"
+      content="Fylo securely stores and organizes your important files for easy access and sharing, anytime, anywhere."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fylo.vercel.app" />
+    <title>Fylo - Securely store files, accessible anywhere.</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +36,7 @@
       src="https://kit.fontawesome.com/c808f58abd.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section class="block">
@@ -34,7 +49,7 @@
         </ul>
       </nav>
     </section>
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
       <div class="container grid grid--1x2">
         <div class="block__header hero__header">
           <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -64,7 +79,10 @@
     <section class="block block-features">
       <div class="container grid grid--1x2">
         <div class="block-features__content">
-          <div class="block__header block-features__header">
+          <div
+            class="block__header block-features__header"
+            data-aos="fade-down"
+          >
             <h2>Stay productive, wherever you are</h2>
             <p>
               Never let location be an issue when accessing your files. Fylo has
@@ -81,7 +99,10 @@
               <use href="images/sprite.svg#icon-arrow"></use>
             </svg>
           </div>
-          <section class="testimonial block-features__testimonial">
+          <section
+            class="testimonial block-features__testimonial"
+            data-aos="fade-right"
+          >
             <svg class="icon testimonial__icon">
               <use href="images/sprite.svg#icon-quotes"></use>
             </svg>
@@ -173,5 +194,9 @@
         </div>
       </footer>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
