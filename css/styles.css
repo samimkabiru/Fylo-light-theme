@@ -261,6 +261,10 @@ a {
 }
 
 /* Hero */
+.hero {
+  column-gap: 6rem;
+}
+
 .hero__image {
   width: 100%;
   order: -1;
@@ -334,6 +338,10 @@ a {
   background-size: 600% 100%;
   background-position-x: center;
   background-repeat: no-repeat;
+}
+
+.features {
+  column-gap: 6rem;
 }
 
 .block-features__image {
