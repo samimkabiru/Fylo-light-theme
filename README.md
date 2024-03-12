@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [](https://github.com/samimkabiru/Fylo-light-theme.git)
-- Live Site URL: [](fylo-light.vercel.app)
+- Live Site URL: [](https://fylo-light.vercel.app)
 
 ### Built with
 
